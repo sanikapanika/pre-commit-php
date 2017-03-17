@@ -62,7 +62,7 @@
   language: pcre
   files: \.php$
 
-- id php-no-exits
+- id: php-no-exits
   name: PHP Ensure no exits or dies
   descriptions: Checks for die and exit calls
   entry: \s+exit[;(]|;exit[;(]|^exit[;(]|\s+die[;(]|;die[;(]|^die[;(]
