@@ -16,6 +16,8 @@ elif hash $global_command 2>/dev/null; then
     exec_command=$global_command
 elif [ -f "$local_command" ]; then
     exec_command=$prefixed_local_command
+elif [ -f "$bin_command" ]; then
+    exec_command=$bin_command
 else
     echo -e "${bldred}No valid ${title} found!${txtrst}"
     echo "Please have one available as one of the following:"
