@@ -24,5 +24,6 @@ else
     echo " * $local_command"
     echo " * $vendor_command"
     echo " * $global_command"
+    echo " * $bin_command"
     exit 1
 fi
