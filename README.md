@@ -122,3 +122,36 @@ Similar pattern as the php-cs hook. A bash script that will run the appropriate 
 
 The tool will fail a build when it has made changes to the staged files. This allows a developer to do a `git diff` and examine the changes that it has made. Remember that you may omit this if needed with a `SKIP=php-cs-fixer git commit`.
 
+
+## php-no-dumps
+
+```yaml
+<<<<<<< HEAD
+- repo: git@github.com:hootsuite/pre-commit-php.git
+  sha: 40b8012eda748d8b83650fcd92a64badbd6a494a
+  hooks:
+  - id: php-no-dumps
+```
+A regex that checks that the symfony `dump` debug function isn't commited
+
+## php-no-var_dumps
+
+```yaml
+<<<<<<< HEAD
+- repo: git@github.com:hootsuite/pre-commit-php.git
+  sha: 40b8012eda748d8b83650fcd92a64badbd6a494a
+  hooks:
+  - id: php-no-var_dumps
+```
+A regex that checks that `var_dump` isn't commited
+
+## php-no-exits
+
+```yaml
+<<<<<<< HEAD
+- repo: git@github.com:hootsuite/pre-commit-php.git
+  sha: 40b8012eda748d8b83650fcd92a64badbd6a494a
+  hooks:
+  - id: php-no-exits
+```
+A regex that checks that `exit` and `die` aren't commited
