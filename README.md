@@ -1,4 +1,4 @@
-# Hootsuite - PHP Pre-commit Hooks
+# PHP Pre-commit Hooks
 
 Pre-commit scripts appropiate for *any* PHP project. These hooks are made as custom plugins under the [pre-commit](http://pre-commit.com/#new-hooks) git hook framework.
 
@@ -7,8 +7,8 @@ Pre-commit scripts appropiate for *any* PHP project. These hooks are made as cus
 Just add to your `.pre-commit-config.yaml` file with the following
 
 ```yaml
-- repo: git@github.com:hootsuite/pre-commit-php.git
-  sha: 1.1.0
+- repo: git@github.com:borisbabic/pre-commit-php.git
+  sha: 2.0.0
   hooks:
   - id: php-lint
   - id: php-unit
@@ -26,8 +26,8 @@ Just add to your `.pre-commit-config.yaml` file with the following
 
 ```yaml
 <<<<<<< HEAD
-- repo: git@github.com:hootsuite/pre-commit-php.git
-  sha: 1.1.0
+- repo: git@github.com:borisbabic/pre-commit-php.git
+  sha: 2.0.0
   hooks:
   - id: php-lint
 ```
@@ -37,8 +37,8 @@ A bash script that runs `php -l` against stage files that are php. Assumes `php`
 ## php-lint-all
 
 ```yaml
-- repo: git@github.com:hootsuite/pre-commit-php.git
-  sha: 1.1.0
+- repo: git@github.com:borisbabic/pre-commit-php.git
+  sha: 2.0.0
   hooks:
   - id: php-lint-all
 ```
@@ -49,8 +49,8 @@ A systems hook that just runs `php -l` against stage files that have the `.php` 
 
 
 ```yaml
-- repo: git@github.com:hootsuite/pre-commit-php.git
-  sha: 1.1.0
+- repo: git@github.com:borisbabic/pre-commit-php.git
+  sha: 2.0.0
   hooks:
   - id: php-unit
 ```
@@ -64,8 +64,8 @@ Note in its current state, it will run the whole PHPUnit test as along as `.php`
 ## php-cs
 
 ```yaml
-- repo: git@github.com:hootsuite/pre-commit-php.git
-  sha: 1.1.0
+- repo: git@github.com:borisbabic/pre-commit-php.git
+  sha: 2.0.0
   hooks:
   - id: php-cs
     files: \.(php)$
@@ -83,8 +83,8 @@ If you have multiple standards or a comma in your `args` property, escape the co
 ## php-cbf
 
 ```yaml
-- repo: git@github.com:hootsuite/pre-commit-php.git
-  sha: 1.1.0
+- repo: git@github.com:borisbabic/pre-commit-php.git
+  sha: 2.0.0
   hooks:
   - id: php-cs
     files: \.(php)$
@@ -99,8 +99,8 @@ The `args` property in your hook declaration can be used for pass any valid PHP 
 If you have multiple standards or a comma in your `args` property, escape the comma character like so
 
 ```yaml
-- repo: git@github.com:hootsuite/pre-commit-php.git
-  sha: 1.1.0
+- repo: git@github.com:borisbabic/pre-commit-php.git
+  sha: 2.0.0
   hooks:
   - id: php-cs
     files: \.(php)$
@@ -111,8 +111,8 @@ To install PHP Codesniffer (phpcs & phpcbf), follow the [recommended steps here]
 
 ## php-cs-fixer
 ```yaml
-- repo: git@github.com:hootsuite/pre-commit-php.git
-  sha: 1.1.0
+- repo: git@github.com:borisbabic/pre-commit-php.git
+  sha: 2.0.0
   hooks:
   - id: php-cs-fixer
     files: \.(php)$
@@ -127,8 +127,8 @@ The tool will fail a build when it has made changes to the staged files. This al
 
 ```yaml
 <<<<<<< HEAD
-- repo: git@github.com:hootsuite/pre-commit-php.git
-  sha: 40b8012eda748d8b83650fcd92a64badbd6a494a
+- repo: git@github.com:borisbabic/pre-commit-php.git
+  sha: 2.0.0
   hooks:
   - id: php-no-dumps
 ```
@@ -138,8 +138,8 @@ A regex that checks that the symfony `dump` debug function isn't commited
 
 ```yaml
 <<<<<<< HEAD
-- repo: git@github.com:hootsuite/pre-commit-php.git
-  sha: 40b8012eda748d8b83650fcd92a64badbd6a494a
+- repo: git@github.com:borisbabic/pre-commit-php.git
+  sha: 2.0.0
   hooks:
   - id: php-no-var_dumps
 ```
@@ -149,8 +149,8 @@ A regex that checks that `var_dump` isn't commited
 
 ```yaml
 <<<<<<< HEAD
-- repo: git@github.com:hootsuite/pre-commit-php.git
-  sha: 40b8012eda748d8b83650fcd92a64badbd6a494a
+- repo: git@github.com:borisbabic/pre-commit-php.git
+  sha: 2.0.0
   hooks:
   - id: php-no-exits
 ```
