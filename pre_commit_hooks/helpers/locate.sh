@@ -23,6 +23,7 @@ elif [ -f "$local_command" ]; then
 else
     echo -e "${bldred}No valid ${title} found!${txtrst}"
     echo "Please have one available as one of the following:"
+    echo " * $shopware_command"
     echo " * $local_command"
     echo " * $vendor_command"
     echo " * $global_command"
