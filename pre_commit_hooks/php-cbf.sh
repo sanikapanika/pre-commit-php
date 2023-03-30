@@ -26,7 +26,11 @@ phpcbf_command="php $phpcbf_local_exec"
 # Check vendor/bin/phpunit
 phpcbf_vendor_command="vendor/bin/phpcbf"
 phpcbf_global_command="phpcbf"
-if [ -f "$phpcbf_vendor_command" ]; then
+phpcbf_shopware_command=".github/pre-commit/vendor/bin/phpcbf"
+
+if [ -f "$phpcbf_shopware_command" ]; then
+    phpcbf_command=$phpcbf_shopware_command
+elif [ -f "$phpcbf_vendor_command" ]; then
 	phpcbf_command=$phpcbf_vendor_command
 else
     if hash phpcbf 2>/dev/null; then

@@ -26,6 +26,7 @@ local_command="php-cs-fixer.phar"
 vendor_command="vendor/bin/php-cs-fixer"
 global_command="php-cs-fixer"
 bin_command="bin/php-cs-fixer"
+shopware_command=".github/pre-commit/vendor/bin/php-cs-fixer"
 
 # Print a welcome and locate the exec for this tool
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"

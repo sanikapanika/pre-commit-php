@@ -26,6 +26,7 @@ local_command="phpcs.phar"
 vendor_command="vendor/bin/phpcs"
 global_command="phpcs"
 bin_command="bin/phpcs"
+shopware_command=".github/pre-commit/vendor/bin/phpcs"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $DIR/helpers/locate.sh
 
